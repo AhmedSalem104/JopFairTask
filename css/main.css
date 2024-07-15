@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.div-inputs input {
+    background-color: rgba(187, 187, 255, 0.363);
+}
+
+#chartContainer{
+    background-color:rgba(1, 72, 85, 0.089);
+    border-radius: 3px;
+    border: 2px solid rgba(0, 0, 0, 0.205);
+}

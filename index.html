@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer posts</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <section class="container">
+        <h1 class="text-center">customer posts</h1>
+        <div class="div-inputs  d-flex m-3 gap-3 ">
+            <input type="text" id="filterName" class="form-control" placeholder="Filter by customer name">
+            <input type="number" id="filterAmount" class="form-control" placeholder="Filter by post amount">
+        </div>
+        <table id="customerTable">
+            <thead>
+                <tr>
+                    <th>customer Name</th>
+                    <th>Total Transaction Amount</th>
+                    <th>Transactions per day</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div>
+            <hr>
+            <h1 class="text-center mb-4"> Chart For customer</h1>
+        </div>
+        <div class="container p-5 mb-5" id="chartContainer">
+            <canvas id="transactionChart"></canvas>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
