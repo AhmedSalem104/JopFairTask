@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const row = customerTable.insertRow();
       row.insertCell(0).innerText = customer ? customer.name : ".";
       row.insertCell(1).innerText = transaction ? transaction.amount : ".";
-      row.insertCell(2).innerHTML = `<button onclick="showChart(${transaction.customer_id})">View</button>`
+      row.insertCell(2).innerHTML = `<button class="btn btn-primary w-25" onclick="showChart(${transaction.customer_id})">View</button>`
     });
 
   };
